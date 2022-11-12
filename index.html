@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>My Kanban Board!</title>
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="/confetti.js"></script>
+
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="app-title">Kanban Board</h1>
+        <!-- add the empty state here -->
+        <div class="empty-state">
+          <h2 class="empty-state__title">Add your tasks below</h2>
+          <p class="empty-state__description">
+            What would you like to get done today?
+          </p>
+        </div>
+        <!-- end -->
+        <form class="js-form">
+          <input
+            autofocus
+            type="text"
+            aria-label="Enter a new todo item"
+            placeholder="E.g. Water plants"
+            class="js-todo-input"
+          />
+        </form>
+
+        <!--                 <ul class="todo-list js-todo-list"></ul> -->
+        <div class="row">
+          <div class="column">
+            <h2>TO DO</h2>
+
+            <ul class="todo-list js-todo-list"></ul>
+          </div>
+          <div class="column">
+            <h2>DOING</h2>
+            <ul class="todo-list js-doing-list"></ul>
+          </div>
+          <div class="column">
+            <h2>DONE</h2>
+            <ul class="todo-list js-done-list"></ul>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <svg>
+      <defs>
+        <symbol id="delete-icon" viewbox="0 0 448 448">
+          <path
+            d="m224 0c-123.710938 0-224 100.289062-224 224s100.289062 224 224 224 224-100.289062 224-224c-.132812-123.65625-100.34375-223.867188-224-224zm124.449219 325.824219c4.15625 4.015625 5.828125 9.964843 4.363281 15.558593s-5.835938 9.964844-11.429688 11.429688-11.542968-.207031-15.558593-4.363281l-101.824219-101.824219-101.824219 101.824219c-6.277343 6.0625-16.257812 5.976562-22.429687-.195313s-6.257813-16.152344-.195313-22.429687l101.824219-101.824219-101.824219-101.824219c-4.15625-4.015625-5.828125-9.964843-4.363281-15.558593s5.835938-9.964844 11.429688-11.429688 11.542968.207031 15.558593 4.363281l101.824219 101.824219 101.824219-101.824219c6.277343-6.0625 16.257812-5.976562 22.429687.195313s6.257813 16.152344.195313 22.429687l-101.824219 101.824219zm0 0"
+            fill="#D80027"
+          />
+        </symbol>
+      </defs>
+    </svg>
+  </body>
+</html>
